@@ -24,13 +24,11 @@ const game = {  // use an object to keep code neatly grouped...
   // figure out if need to return x or o
   naughtOrCross: function (index) {
     if (xMarksTurn === true) { // if player 2's turn "Crosses"
-      console.log('xmark');
       turnCount++;
       xMarksTurn = false;
       currentSelector = 'xmark'
       return 'xmark'
     } else { // player 1's turn "Naughts"
-      console.log('circle');
       turnCount++;
       xMarksTurn = true;
       currentSelector = 'circle'

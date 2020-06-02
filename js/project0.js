@@ -1,21 +1,19 @@
 const checkForWin = function (selector) {
   // if 3 in a row, strike through & display "X Wins!" etc
   if (selector === 'Tie') {
-    console.log("It's a " + selector);
-    $('.board').delay(500).fadeOut(300, function () {
-      $('.space2').delay(600).fadeIn(300, function () {
+    $('.board').delay(300).fadeOut(300, function () {
+      $('.space2').delay(50).fadeIn(100, function () {
         $('.space2').addClass('draw').text("It's a Draw!")
     }).show()}).hide(0);
   } else {
-    console.log(selector + ' is the winner!');
     if (selector === 'circle') {
-    $('.board').delay(500).fadeOut(300, function () {
-      $('.space2').delay(600).fadeIn(300, function () {
+    $('.board').delay(300).fadeOut(300, function () {
+      $('.space2').delay(300).fadeIn(100, function () {
         $('.space2').addClass('circle2').text('WINNER!')
     }).show()}).hide(0); // hide requires argument if using delay for some reason... // nesting the function means that it won't start the next animation until the current animation is complete.
     } else {
-      $('.board').delay(500).fadeOut(300, function () {
-        $('.space2').delay(600).fadeIn(300, function () {
+      $('.board').delay(300).fadeOut(300, function () {
+        $('.space2').delay(300).fadeIn(100, function () {
           $('.space2').addClass('xmark2').text('WINNER!')
       }).show()}).hide(0);
     };
