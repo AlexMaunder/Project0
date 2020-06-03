@@ -26,6 +26,15 @@ body {
   opacity: 0.5;
 }
 
+select {
+  border: 0;
+  outline: none;
+  direction: rtl;
+  position: absolute;
+  left: 33.5%;
+  text-align: left;
+}
+
 .space {
   padding: 30px;
 }
