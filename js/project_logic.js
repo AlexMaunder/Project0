@@ -7,14 +7,6 @@ let scoreX = 0;
 let scoreCirc = 0;
 let tie = 0;
 
-// Check if Local Storage is available using Modernizr
-if (Modernizr.localstorage) {
-  // window.localStorage is available!
-} else {
-  // no native support for HTML5 storage :(
-  // maybe try dojox.storage or a third-party solution
-}
-
 
 const game = {  // use an object to keep code neatly grouped...
 
