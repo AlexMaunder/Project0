@@ -5,7 +5,7 @@
 To improve skills in DOM manipulation using jQuery and develop scalable code.
 
 ## Screenshots
-![image of gameplay](https://github.com/alexmaunder/Project0/blob/branch1/image.jpg?raw=true)
+![image of gameplay](https://github.com/AlexMaunder/Project0/blob/master/img/game.png)
 
 ## Tech/ Framework Used
 
