@@ -22,9 +22,13 @@ Change Characters
 
 Detect Win/Draw and display appropriate graphic
 
+Multiple files to seperate DOM manipulation from project logic.
+
 
 ## Code Example
 
+
+JS
 ```
 checkWinOrDraw: function (indexClick, selector) {
   let winner = null;
@@ -36,6 +40,15 @@ checkWinOrDraw: function (indexClick, selector) {
     console.log('a true case matched - horizontal')
 
 ```
+
+jQuery (nested functions)
+```
+$('.board').delay(300).fadeOut(300, function () {
+  $('.space2').delay(50).fadeIn(100, function () {
+    $('.space2').addClass('draw').text("It's a Draw!")
+}).show()}).hide(0);
+```
+
 
 ## How to Play
 
